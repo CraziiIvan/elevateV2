@@ -4,7 +4,7 @@ import capacitiesLogo from "../public/capacitiesLogo.svg";
 
 export default function Card() {
   return (
-    <div className=" hover:bg-zinc-50 cursor-pointer transition-colors duration-300 ease-out p-1 rounded-[20px]">
+    <div className=" hover:bg-zinc-100 cursor-pointer transition-colors duration-300 ease-out p-1 rounded-[20px]">
       <div
         className="relative aspect-video w-full overflow-hidden rounded-2xl border border-zinc-100"
       >

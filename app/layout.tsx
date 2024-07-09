@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${instrumentSans.className} flex h-screen flex-col p-4 sm:flex-row`}
+        className={`${instrumentSans.className} flex h-screen flex-col overflow-hidden sm:flex-row`}
       >
         <Header />
         <SideBar />
