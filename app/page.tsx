@@ -1,3 +1,4 @@
+import ItemsList from "@/components/itemsList";
 import { Button } from "@/components/ui/button";
 import { helvetica } from "@/lib/fonts";
 
@@ -16,6 +17,7 @@ export default function Home() {
           <Button variant="secondary">Submit</Button>
         </div>
       </div>
+      <ItemsList/>
     </main>
   );
 }
