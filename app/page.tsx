@@ -1,10 +1,9 @@
 import ItemsList from "@/components/itemsList";
 import SubmitModal from "@/components/modals/submitModal";
 import SubscribeModal from "@/components/modals/subscribeModal";
-import { Button } from "@/components/ui/button";
 import { helvetica } from "@/lib/fonts";
-
 export default function Home() {
+
   return (
     <main className="px-8 grow pt-24 pb-6 sm:mt-0 sm:p-8 sm:pl-4 overflow-scroll">
       <div className="max-w-xl rounded-md">

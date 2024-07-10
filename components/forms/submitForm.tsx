@@ -5,7 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import {
     submitFormSchema,
     TSubmitForm,
-} from "@/lib/schemas"
+} from "@/lib/types"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -49,19 +49,6 @@ export default function SubmitForm({ className }: React.ComponentProps<"form">) 
                     render={({field}) => (  
                         <FormItem>
                             <FormLabel>Name</FormLabel>
-                            <FormControl>
-                                <Input {...field}/>
-                            </FormControl>
-                        <FormMessage/>
-                        </FormItem>
-                    )}
-                />
-                <FormField
-                    control={form.control}
-                    name="category"
-                    render={({field}) => (  
-                        <FormItem>
-                            <FormLabel>Category</FormLabel>
                             <FormControl>
                                 <Input {...field}/>
                             </FormControl>
