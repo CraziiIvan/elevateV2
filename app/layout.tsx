@@ -3,6 +3,7 @@ import "./globals.css";
 import SideBar from "@/components/layouts/sideBar";
 import { instrumentSans } from "@/lib/fonts";
 import Header from "@/components/layouts/header";
+import { CommandMenu } from "@/components/modals/commandMenu";
 
 export const metadata: Metadata = {
   title: "Elevate",
@@ -21,6 +22,7 @@ export default function RootLayout({
       >
         <Header />
         <SideBar />
+        <CommandMenu/>
         {children}
       </body>
     </html>

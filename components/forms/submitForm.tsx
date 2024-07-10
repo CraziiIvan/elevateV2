@@ -15,9 +15,7 @@ export default function SubmitForm({ className }: React.ComponentProps<"form">) 
 
     const form = useForm({
         defaultValues: {
-            email: "",
             name: "",
-            category: "",
             url: "",
         },
         resolver: zodResolver(submitFormSchema),
@@ -30,19 +28,6 @@ export default function SubmitForm({ className }: React.ComponentProps<"form">) 
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className={cn("space-y-6", className)}>
-                <FormField
-                    control={form.control}
-                    name="email"
-                    render={({field}) => (  
-                        <FormItem>
-                            <FormLabel>Email</FormLabel>
-                            <FormControl>
-                                <Input {...field}/>
-                            </FormControl>
-                        <FormMessage/>
-                        </FormItem>
-                    )}
-                />
                 <FormField
                     control={form.control}
                     name="name"
