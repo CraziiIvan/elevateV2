@@ -1,25 +1,25 @@
 import ItemsList from "@/components/itemsList";
-import SubmitModal from "@/components/modals/submitModal";
-import SubscribeModal from "@/components/modals/subscribeModal";
-import { helvetica } from "@/lib/fonts";
+import Image from "next/image";
+import heroBg from "@/public/hero-bg.svg";
+import Hero from "@/components/layouts/hero";
 
 export default function Home() {
 
   return (
-    <main id="main" className="px-8 grow pt-24 pb-6 sm:mt-0 sm:p-8 sm:pl-4 overflow-scroll">
-      <div className="max-w-xl rounded-md">
-        <h1 className={`${helvetica.className} text-3xl font-bold`}>
-          Curated Tools Library
-        </h1>
-        <p className="mt-2 text-lg text-zinc-500">
-          Streamline your workflow with curated tools for enhanced productivity.
-        </p>
-        <div className="mt-6 flex gap-x-4">
-          <SubscribeModal/>
-          <SubmitModal/>
+    <main id="main" className="px-8 grow pb-6 sm:mt-0 sm:p-8 sm:pl-4 overflow-x-hidden relative">
+        <Hero/>
+        <Image src={heroBg} alt="hero-bg" width={480} className=" absolute top-20 -right-[72px] sm:top-6 sm:right-0 rotate-12 -z-50" />
+        <div className=" h-svh">
+        <ItemsList/>
         </div>
-      </div>
-      <ItemsList/>
     </main>
   );
 }
+
+// export default function Home() {
+//   return (
+//     <main>
+//       Hello
+//     </main>
+//   )
+// }

@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { Code2, Compass, Palette, Plus, Rocket, Sparkle } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion"
 
 const links = [
   { name: "Discover", href: "/", icon: <Compass size={16} /> },
@@ -25,15 +26,15 @@ export default function Nav() {
               href={link.href}
               key={link.name}
               className={cn(
-                "relative rounded-md px-3 py-2 font-medium transition-colors duration-150 ease-out hover:text-black",
-                { "text-black": isActive, "text-zinc-500": !isActive },
+                "relative px-3 py-2 transition-colors duration-150 ease-out hover:text-black",
+                { "text-black": isActive, "text-gray9": !isActive },
               )}
             >
               <div className="relative z-10 flex items-center gap-x-3">
                 {link.icon} {link.name}
               </div>
               {isActive && (
-                <div className="absolute inset-0 rounded-xl border border-zinc-200 bg-zinc-100" />
+                <motion.div layoutId="navBackDrop" className="absolute inset-0 rounded-xl bg-gray3 border border-gray4" />
               )}
             </Link>
           );

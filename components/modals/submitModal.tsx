@@ -35,8 +35,7 @@ export default function SubmitModal() {
           <DialogHeader>
             <DialogTitle>Submit Your Tool to Elevate</DialogTitle>
             <DialogDescription>
-              Have a tool that you believe that is useful for the community?
-              Submit it to Elevate and help us grow.
+              Let us know about your tool and help us grow.
             </DialogDescription>
           </DialogHeader>
           <SubmitForm />
