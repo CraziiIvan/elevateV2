@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss"
 import { gray, sageDark } from "@radix-ui/colors"
 
 const config = {
+  // darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
